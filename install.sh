@@ -14,8 +14,5 @@ uci set firewall.@rule[-1].proto='udp';
 uci set firewall.@rule[-1].dest_port='9993';
 uci commit firewall ;
 uci set network.lan.ipaddr='192.168.50.1';
-uci add network rule ;
-uci set network.@rule[-1].name='ZeroTier' ;
-uci set network.@rule[-1].proto='unmanaged';
 uci commit network;
 reboot;
