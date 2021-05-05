@@ -1,5 +1,5 @@
 opkg update ; 
-opkg install luci-app-sqm luci-app-watchcat zerotier ;
+opkg install luci-app-sqm luci-app-watchcat zerotier avahi-daemon ;
 #Zerotier
 uci set zerotier.openwrt_network=zerotier ;
 uci add_list zerotier.openwrt_network.join='NETWORK' ;
